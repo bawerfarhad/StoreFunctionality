@@ -4,7 +4,7 @@ include 'Header.php';
 
  ?>
 
-<h1>index</h1>
+<h1>hey man</h1>
 
  <?php
 

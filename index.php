@@ -19,7 +19,7 @@ $dbname = "bahsstore";
           $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
           // set the PDO error mode to exception
           $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-          $sql=" select * from users where email='$email' && password='$password' ;";
+          $sql=" select * from users where email='$email' and password='$password' ;";
           // use exec() because no results are returned
           $conn->exec($sql);
            echo "login successfully";
@@ -39,7 +39,7 @@ $dbname = "bahsstore";
 
 
 ?>
-<title>Register</title>
+<title>login</title>
 </head>
 <body>
 <div class="container-scroller">
