@@ -18,7 +18,7 @@
     <div class="custom">
     <div class="container NavBar">
     <nav class="navbar navbar-expand-md navbar-light">
-    <a href="index.php" class="navbar-brand">
+    <a href="home.php" class="navbar-brand">
 
         <img style="width:79px; height:40px;" src="/Picture/Wix-Logo.png" class="logo"  alt="" srcset="" />
 
@@ -64,8 +64,7 @@
 
                 <a class="btn btn-outline-success mx-2">Search</a>
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <a class="btn btn-outline-success mx-2" href="login.php" > login</a>
-                </form>
+                                </form>
             </div>
 
     </nav>
