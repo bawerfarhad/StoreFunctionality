@@ -1,10 +1,10 @@
 <?php
 
 function Component($title,$price ,$img,$id){
-
+$path="admin/".$img;
 $element="
             <div class=\"col-md-3 py-3 col-sm-6 my-3 my-md-0\">
-            <form action=\"index.php\" method=\"post\">
+            <form action=\"home.php\" method=\"post\">
                 <div class=\"card shadow\">
                     <div class=\"\">
                         <img src=$img class=\"img-fluid card-img-top\" alt=\"\">
@@ -24,14 +24,14 @@ $element="
                                 <span class=\"price\">$price $</span>
                             </small>
                         </h5>
-                        
+
                         <button class=\"btn btn-success mx-5\" type=\"submit\" name=\"add\"> Add to card <i class=\"fas fa-shopping-cart \"></i> </button>
                            <input type='hidden' name='product_id' value=$id>
                     </div>
                 </div>
             </form>
         </div>
-        
+
 
 
 ";
@@ -43,8 +43,8 @@ $element="
 
 function cartElement($product_name,$product_price ,$product_img,$product_id){
     $element="
-    
-    
+
+
                         <form action=\"mycard.php?action=remove&id=$product_id \" method=\"post\" class=\"cart-items my-4\">
                         <div class=\"border rounded\">
                             <div class=\"row bg-white\">
@@ -64,9 +64,8 @@ function cartElement($product_name,$product_price ,$product_img,$product_id){
                         </div>
                     </form>
 
-    
-    
+
+
     ";
     echo $element;
 }
-

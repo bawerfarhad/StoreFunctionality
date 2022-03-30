@@ -3,7 +3,7 @@
     include 'Header.php';
     include 'Functions/functions.php';
     include 'Functions/CreateDb.php';
-    
+
 
     $Database= new CreateDb('BahsStore','Products');
 
@@ -15,7 +15,7 @@
 
             if(in_array($_POST['product_id'],$item_array_id)){
                 echo "<script> alert('product added to the card')  </script> ";
-                echo "<script> window.location='index.php'</script> ";
+                echo "<script> window.location='home.php'</script> ";
             }else{
                 $count=count($_SESSION['card']);
                 $item_array=array(

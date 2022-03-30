@@ -77,7 +77,7 @@ include '../db-connection.php';
 
                </div>
                <div class="mt-3">
-                 <input type="submit" name="create" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="Create new account"/>
+                 <input type="submit" name="create" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" value="Create new product"/>
                </div>
 
 

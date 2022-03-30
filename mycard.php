@@ -4,6 +4,10 @@
     include 'Functions/functions.php';
     include 'Functions/CreateDb.php';
 
+    $total=0;
+
+
+
     $db= new CreateDb('bahsstore','products');
 
     if(isset($_POST['remove'])){
@@ -38,7 +42,7 @@
                     <h6>My Card</h6>
                     <hr>
                     <?php
-                        $total=0;
+
                         if(isset($_SESSION['card'])){
                         $product_id=array_column($_SESSION['card'],'product_id');
                         $result= $db->getData();
@@ -71,18 +75,16 @@
                                     echo '<h3>Price (0 items)</h3>';
                                 }
                             ?>
-
-
                         </div>
 
                         <div class="col-md-6">
                                 <h4><?php echo "($count items) = $total";?>$</h4>
-                            <form action="order.php">
+                            <form action="order.php" method="get">
+                                <input type="hidden" name="varname" value=<?php $total ?>>
+                                <?php $_SESSION['total_p'] = $total; ?>
                                 <button type="submit" name="submit" class="btn btn-success my-3 " > Submit order </button>
                             </form>
                         </div>
-
-
                     </div>
                 </div>
             </div>
