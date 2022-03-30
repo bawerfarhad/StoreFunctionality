@@ -7,7 +7,7 @@ $element="
             <form action=\"home.php\" method=\"post\">
                 <div class=\"card shadow\">
                     <div class=\"\">
-                        <img src=$img class=\"img-fluid card-img-top\" alt=\"\">
+                        <img src='$img' class=\"img-fluid card-img-top\" alt=\"\">
                     </div>
                     <div class=\"card-body\">
                         <div class=\"card-title\">$title</div>
