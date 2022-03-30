@@ -14,7 +14,7 @@ include '../db-connection.php';
   <h4 class="my-5 text-center">bellow this you can see all orders currently wont to buy on the website </h4>
   <div class="">
 
-    <table class="table mx-3 my-3">
+    <table class="table px-5 my-3">
      <thead>
        <tr>
          <th>ID</th>

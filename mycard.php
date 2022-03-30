@@ -83,6 +83,8 @@
                                 <input type="hidden" name="varname" value=<?php $total ?>>
                                 <?php $_SESSION['total_p'] = $total; ?>
                                 <button type="submit" name="submit" class="btn btn-success my-3 " > Submit order </button>
+                                <button type="reset" name="clean" class="btn btn-danger my-3 " > clea card </button>
+
                             </form>
                         </div>
                     </div>

@@ -17,7 +17,7 @@ include '../db-connection.php';
       $p_name=$_POST['p_name'];
       $p_price=$_POST['p_price'];
       $p_image= $_FILES['p_image']['name'];
-      $path= "Picture/" . $p_image;
+      $path= "../Picture/" . $p_image;
 
 
     try {
